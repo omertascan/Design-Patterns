@@ -1,9 +1,9 @@
-# Flyweight (Hafif) sınıfı
+# Flyweight 
 class Color:
     def __init__(self, name):
         self.name = name
 
-# Flyweight Factory (Hafif Nesne Fabrikası)
+# Flyweight Factory 
 class ColorFactory:
     colors = {}
 
