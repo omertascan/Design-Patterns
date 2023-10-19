@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-# AbstractClass (Soyut Sınıf)
+# AbstractClass 
 class DocumentTemplate(ABC):
     def create_document(self):
         self.add_title()
@@ -18,7 +18,7 @@ class DocumentTemplate(ABC):
     def add_footer(self):
         print("Altbilgi eklendi.")
 
-# ConcreteClass (Somut Sınıf)
+# ConcreteClass 
 class ResumeDocument(DocumentTemplate):
     def add_title(self):
         print("Özgeçmiş Başlığı Eklendi.")
