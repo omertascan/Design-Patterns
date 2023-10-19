@@ -1,12 +1,12 @@
 from abc import ABC, abstractmethod
 
-# Command arayüzü
+# Command 
 class Command(ABC):
     @abstractmethod
     def execute(self):
         pass
 
-# ConcreteCommand sınıfları
+# ConcreteCommand 
 class LightOnCommand(Command):
     def __init__(self, light):
         self.light = light
@@ -21,7 +21,7 @@ class LightOffCommand(Command):
     def execute(self):
         self.light.turn_off()
 
-# Receiver sınıfı
+# Receiver
 class Light:
     def turn_on(self):
         print("Işık açık")
@@ -29,7 +29,7 @@ class Light:
     def turn_off(self):
         print("Işık kapalı")
 
-# Invoker sınıfı
+# Invoker 
 class RemoteControl:
     def __init__(self):
         self.command = None
