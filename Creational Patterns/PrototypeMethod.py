@@ -10,7 +10,7 @@ class ConcretePrototype(Prototype):
         self.value = value
 
     def show(self):
-        print(f"ConcretePrototype with value: {self.value}")
+        print(f"ConcretePrototype wit value: {self.value}")
 
 # İlk nesne oluşturulur
 original = ConcretePrototype("Original")
