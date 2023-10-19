@@ -1,4 +1,4 @@
-# Component  arayüzü
+# Component  
 class Tea:
     def cost(self):
         return 5
