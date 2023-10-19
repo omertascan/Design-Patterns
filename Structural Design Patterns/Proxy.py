@@ -1,14 +1,14 @@
-# Subject (Konu) arayüzü
+# Subject 
 class MathOperation:
     def add(self, a, b):
         pass
 
-# Real Subject (Gerçek Konu)
+# Real Subject
 class RealMathOperation(MathOperation):
     def add(self, a, b):
         return a + b
 
-# Proxy (Vekil)
+# Proxy 
 class MathOperationProxy(MathOperation):
     def __init__(self):
         self.real_math_operation = RealMathOperation()
@@ -22,8 +22,8 @@ class MathOperationProxy(MathOperation):
 if __name__ == "__main__":
     proxy = MathOperationProxy()
 
-    # Gerçek matematik işlemi kullanımı
-    print("Gerçek matematik işlemi kullanımı:")
+    #  matematik işlemi kullanımı
+    print(" matematik işlemi kullanımı:")
     real_math = RealMathOperation()
     result = real_math.add(3, 5)
     print(f"Sonuç: {result}")

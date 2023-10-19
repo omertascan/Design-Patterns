@@ -1,19 +1,19 @@
-# Implementor (Uygulayıcı) - Mesaj Gönderim
+# Implementor - Mesaj Gönderim
 class MessageSender:
     def send_message(self, message):
         pass
 
-# Concrete Implementor (Somut Uygulayıcı) - SMS
+# Concrete Implementor  - SMS
 class SMSMessageSender(MessageSender):
     def send_message(self, message):
         print(f"SMS gönderiliyor: {message}")
 
-# Concrete Implementor (Somut Uygulayıcı) - E-posta
+# Concrete Implementor  - E-posta
 class EmailMessageSender(MessageSender):
     def send_message(self, message):
         print(f"E-posta gönderiliyor: {message}")
 
-# Abstraction (Soyutlama) - Mesaj
+# Abstraction  - Mesaj
 class Message:
     def __init__(self, sender):
         self.sender = sender

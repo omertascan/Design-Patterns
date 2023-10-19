@@ -1,4 +1,4 @@
-# Alt sistem bileşeni 1 - Televizyon
+# Subsystem - Televizyon
 class TV:
     def turn_on(self):
         print("Televizyon açıldı.")

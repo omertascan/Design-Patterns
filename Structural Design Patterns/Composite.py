@@ -1,4 +1,4 @@
-# Component (Bileşen) arayüzü
+# Component 
 class MusicComponent:
     def __init__(self, name):
         self.name = name
@@ -6,12 +6,12 @@ class MusicComponent:
     def play(self):
         pass
 
-# Leaf (Yaprak) sınıfı
+# Leaf 
 class Song(MusicComponent):
     def play(self):
         print(f"Şarkı çalınıyor: {self.name}")
 
-# Composite (Bileşik) sınıfı
+# Composite 
 class Playlist(MusicComponent):
     def __init__(self, name):
         super().__init__(name)
