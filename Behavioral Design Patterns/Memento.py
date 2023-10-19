@@ -1,4 +1,4 @@
-# Originator sınıfı
+# Originator 
 class TextEditor:
     def __init__(self):
         self.text = ""
@@ -12,7 +12,7 @@ class TextEditor:
     def restore(self, memento):
         self.text = memento.get_text()
 
-# Memento sınıfı
+# Memento
 class TextMemento:
     def __init__(self, text):
         self.text = text
@@ -20,7 +20,7 @@ class TextMemento:
     def get_text(self):
         return self.text
 
-# Caretaker sınıfı
+# Caretaker 
 class History:
     def __init__(self):
         self.states = []
