@@ -6,7 +6,7 @@ public class ReadPython {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        String path = "C:\\Users\\omert\\Task\\Creational Patterns\\Factory Method.py";
+        String path = "Your code Path";
         
 
         ProcessBuilder pb = new ProcessBuilder("python", path).inheritIO();
