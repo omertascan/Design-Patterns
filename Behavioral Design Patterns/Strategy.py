@@ -19,7 +19,7 @@ class BankTransferPayment(PaymentStrategy):
     def pay(self, amount):
         print(f"Banka Havalesi ile ${amount} ödeme yapılıyor.")
 
-# Context (Ödeme İşlemi)
+# Context 
 class PaymentContext:
     def __init__(self, payment_strategy):
         self.payment_strategy = payment_strategy
