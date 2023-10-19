@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-# Mediator arayüzü
+# Mediator 
 class Mediator(ABC):
     @abstractmethod
     def send_message(self, colleague, message):
@@ -19,7 +19,7 @@ class ChatRoom(Mediator):
             if c != colleague:  # Kendi kendine mesaj gönderme
                 c.receive_message(message)
 
-# Colleague arayüzü
+# Colleague 
 class Colleague(ABC):
     def __init__(self, mediator, name):
         self.mediator = mediator
