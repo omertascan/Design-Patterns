@@ -1,6 +1,6 @@
 from collections.abc import Iterable, Iterator
 
-# Iterator arayüzü
+# Iterator 
 class MyIterator(Iterator):
     def __init__(self, collection):
         self.collection = collection
@@ -14,7 +14,7 @@ class MyIterator(Iterator):
         else:
             raise StopIteration
 
-# Aggregate arayüzü
+# Aggregate 
 class MyIterable(Iterable):
     def __init__(self):
         self.my_list = []
@@ -31,6 +31,6 @@ if __name__ == "__main__":
     my_iterable.add_item("Eleman 2")
     my_iterable.add_item("Eleman 3")
 
-    # Iterable üzerinde dolaşma
+ 
     for item in my_iterable:
         print(item)
