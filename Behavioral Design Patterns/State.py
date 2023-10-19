@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-# State (Durum) arayüzü
+# State 
 class State(ABC):
     @abstractmethod
     def turn_on(self):
@@ -10,7 +10,7 @@ class State(ABC):
     def turn_off(self):
         pass
 
-# ConcreteState (Somut Durumlar)
+# ConcreteState 
 class OnState(State):
     def turn_on(self):
         print("Lamba zaten açık.")
@@ -29,7 +29,7 @@ class OffState(State):
     def turn_off(self):
         print("Lamba zaten kapalı.")
 
-# Context (Bağlam) sınıfı
+# Context 
 class Lamp:
     def __init__(self):
         # Başlangıçta lamba kapalı durumdadır
