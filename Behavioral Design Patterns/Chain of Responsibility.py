@@ -1,12 +1,12 @@
 from abc import ABC, abstractmethod
 
-# Handler (İşlemci) arayüzü
+# Handler
 class Handler(ABC):
     @abstractmethod
     def handle_request(self, request):
         pass
 
-# ConcreteHandler (Somut İşlemciler)
+# ConcreteHandler 
 class ConcreteHandlerA(Handler):
     def __init__(self, successor=None):
         self.successor = successor
