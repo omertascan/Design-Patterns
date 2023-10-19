@@ -1,9 +1,9 @@
-# Observer (Gözlemci) arayüzü
+# Observer 
 class Observer:
     def update(self, temperature, humidity):
         pass
 
-# Subject (Özne) sınıfı
+# Subject
 class WeatherStation:
     def __init__(self):
         self._observers = []
