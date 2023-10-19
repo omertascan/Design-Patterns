@@ -1,12 +1,12 @@
 from abc import ABC, abstractmethod
 
-# Element (Öğe) arayüzü
+# Element 
 class Element(ABC):
     @abstractmethod
     def accept(self, visitor):
         pass
 
-# ConcreteElement (Somut Öğe)
+# ConcreteElement 
 class TextElement(Element):
     def accept(self, visitor):
         visitor.visit_text(self)
@@ -15,7 +15,7 @@ class ImageElement(Element):
     def accept(self, visitor):
         visitor.visit_image(self)
 
-# Visitor (Ziyaretçi) arayüzü
+# Visitor 
 class Visitor(ABC):
     @abstractmethod
     def visit_text(self, element):
@@ -25,7 +25,7 @@ class Visitor(ABC):
     def visit_image(self, element):
         pass
 
-# ConcreteVisitor (Somut Ziyaretçi)
+# ConcreteVisitor 
 class StatisticsVisitor(Visitor):
     def visit_text(self, element):
         print("Metin öğesi analiz edildi.")
@@ -33,7 +33,7 @@ class StatisticsVisitor(Visitor):
     def visit_image(self, element):
         print("Görsel öğesi analiz edildi.")
 
-# ObjectStructure (Nesne Yapısı)
+# ObjectStructure 
 class Document:
     def __init__(self):
         self.elements = []
