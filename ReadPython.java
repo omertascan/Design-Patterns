@@ -6,7 +6,7 @@ public class ReadPython {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        String path = "C:\\Users\\omert\\Task\\Design-Patterns\\Structural Design Patterns\\Flyweight.py";
+        String path = "Your Code Path";
         
 
         ProcessBuilder pb = new ProcessBuilder("python", path).inheritIO();
